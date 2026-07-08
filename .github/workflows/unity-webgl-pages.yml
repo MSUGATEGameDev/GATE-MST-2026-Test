@@ -1,5 +1,5 @@
 # Webpacks and then Deploys to GitHub Pages
-name: Build Vite And Deploy To Pages
+name: Build Unity WebGL And Deploy To Pages
 
 on:
   # Runs on pushes targeting the default branch
@@ -41,7 +41,7 @@ jobs:
 
       - name: Build
         run: |-
-          export PATH="$PATH:~/.unity/bin/unity" unity
+          export PATH="$PATH:~/.unity/bin"
           source ~/.profile
           source ~/.bashrc
           unity --version
