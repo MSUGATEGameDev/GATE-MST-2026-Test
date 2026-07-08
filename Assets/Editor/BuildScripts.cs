@@ -35,6 +35,12 @@ public static class BuildScripts
             EditorUserBuildSettings.buildAppBundle = true; // Use AAB for Play Store
         }
 
+        if (target == BuildTarget.WebGL)
+        {
+            PlayerSettings.WebGL.compressionFormat = WebGLCompressionFormat.Disabled;
+            PlayerSettings.WebGL.decompressionFallback = true;
+        }
+
         // Build player options
         BuildPlayerOptions options = new BuildPlayerOptions
         {
@@ -70,7 +76,7 @@ public static class BuildScripts
     [MenuItem("Build/WebGL")]
     public static void BuildWebGL()
     {
-        BuildForTarget(BuildTarget.WebGL, "Builds/WebGL/Index.html");
+        BuildForTarget(BuildTarget.WebGL, "Builds/WebGL/");
     }
 
     // Helper to validate and log the build result
