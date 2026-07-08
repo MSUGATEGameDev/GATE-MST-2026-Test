@@ -34,9 +34,13 @@ jobs:
       # - name: Setup Pages
       #   uses: actions/configure-pages@v5
 
-      - name: Build
+      - name: Install Unity CLI
         run: |-
           curl -fsSL https://public-cdn.cloud.unity3d.com/hub/prod/cli/install.sh | UNITY_CLI_CHANNEL=beta bash
+        continue-on-error: true
+
+      - name: Build
+        run: |-
           source ~/.bashrc
           unity --version
         
