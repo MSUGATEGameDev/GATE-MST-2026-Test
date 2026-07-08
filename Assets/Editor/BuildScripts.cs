@@ -67,10 +67,10 @@ public static class BuildScripts
         BuildForTarget(BuildTarget.Android, "Builds/Android/MyGame.aab");
     }
 
-    [MenuItem("Build/webGL")]
+    [MenuItem("Build/WebGL")]
     public static void BuildWebGL()
     {
-        BuildForTarget(BuildTarget.webgl, "Builds/WebGL");
+        BuildForTarget(BuildTarget.WebGL, "Builds/WebGL/Index.html");
     }
 
     // Helper to validate and log the build result
