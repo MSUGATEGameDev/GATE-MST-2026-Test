@@ -41,6 +41,7 @@ jobs:
 
       - name: Build
         run: |-
+          source ~/.profile
           source ~/.bashrc
           unity --version
         
