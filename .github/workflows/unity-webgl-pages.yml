@@ -41,7 +41,7 @@ jobs:
 
       - name: Build
         run: |-
-          export PATH="$PATH:~/.unity/bin/unity"
+          export PATH="$PATH:~/.unity/bin/unity" unity
           source ~/.profile
           source ~/.bashrc
           unity --version
