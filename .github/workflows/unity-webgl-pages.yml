@@ -35,7 +35,7 @@ jobs:
       #   uses: actions/configure-pages@v5
 
       - name: Build
-        run: |
+        run: |-
           curl -fsSL https://public-cdn.cloud.unity3d.com/hub/prod/cli/install.sh | UNITY_CLI_CHANNEL=beta bash
           source ~/.bashrc
           unity --version
