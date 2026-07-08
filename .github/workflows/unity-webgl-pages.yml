@@ -42,11 +42,13 @@ jobs:
 
       - name: Install Editor/Modules
         run: |-
+          export PATH="$PATH:~/.unity/bin"
           #Set Unity version below
           unity install 6.3 -m webgl
       
       - name: Build
         run: |-
+          export PATH="$PATH:~/.unity/bin"
           unity --version
         
       # - name: Upload artifact
