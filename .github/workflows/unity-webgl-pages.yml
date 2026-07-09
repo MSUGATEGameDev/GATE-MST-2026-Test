@@ -55,7 +55,7 @@ jobs:
         run: |-
           export PATH="$PATH:~/.unity/bin"
           unity --version
-          unity run ./ --editor-version 6000.3 --  -executeMethod BuildScripts.BuildWebGL -buildTarget webgl -nographics -quit
+          unity run ./ --editor-version 6000.3 -- -executeMethod BuildScripts.BuildWebGL -buildTarget webgl -nographics
         
       # - name: Upload artifact
       #   uses: actions/upload-pages-artifact@v3
