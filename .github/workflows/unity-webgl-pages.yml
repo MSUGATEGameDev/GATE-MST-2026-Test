@@ -55,6 +55,7 @@ jobs:
         run: |-
           export PATH="$PATH:~/.unity/bin"
           unity --version
+          ls
         
       # - name: Upload artifact
       #   uses: actions/upload-pages-artifact@v3
