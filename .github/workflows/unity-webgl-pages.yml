@@ -44,7 +44,7 @@ jobs:
         run: |-
           export PATH="$PATH:~/.unity/bin"
           #Set Unity version below
-          # unity install 6.3 -m webgl
+          unity install 6.3 -m webgl
 
       - name: Install Editor Dependences
         run: |-
